@@ -93,7 +93,14 @@ h6 {
 .body-top87 {
   padding-top: 87px;
 }
-
+ul.listing{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.listing li{
+  display: block;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -841,8 +848,8 @@ Hero Slider section
 .price-card .title{
   font-size: 46px;
   font-weight: 700;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .blue-gradient{
   background: #0068C8;
@@ -1096,12 +1103,27 @@ Login Page CSS
 }
 
 .company-details{
-  background-image: url("../img/login-image.png");
+  /* background-image: url("../img/login-image.png");
   background-attachment: scroll;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
+  background-size: cover; */
+  min-height: 520px;
+  background-color: #E9E9E9;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 30px;
+  position: relative;
+  padding: 5rem;
+}
+.company-details::before{
+  content: "";
+  background-image: url("../img/new-ribbon.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 147px;
+  position: absolute;
+  top: -10px;
+  left:-10px;
 }
 
 /*==========================================
