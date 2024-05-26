@@ -45,6 +45,9 @@ export class LoginComponent implements OnInit {
           this.loginDetails = decoded;
           this.localStorageService.setLogger(this.loginDetails);
           this.router.navigateByUrl('/home');
+          setTimeout(() => {
+            window.location.reload();
+          }, 500);
         } else {
           // this.notificationService.showError(response?.message);
         }
