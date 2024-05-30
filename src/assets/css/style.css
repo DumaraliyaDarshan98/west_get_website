@@ -602,20 +602,20 @@ Button Styling
 }
 
 .btn-lightgray {
-  background-color: #EFEFEF;
-  color: #000;
-  border-radius: 50px;
-  padding: 1rem 3rem;
-  border-color: #EFEFEF;
-  font-weight: 400;
-  min-width: 320px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #EFEFEF !important;
+  color: #000 !important;
+  border-radius: 50px !important;
+  padding: 1rem 3rem !important;
+  border-color: #EFEFEF !important;
+  font-weight: 400 !important;
+  min-width: 320px !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
 }
 
 .btn-lightgray:hover,
 .btn-lightgray:focus {
-  background-color: #0077DC;
-  color: #FFF;
+  background-color: #0077DC !important;
+  color: #FFF !important;
 }
 
 /*--------------------------------------------------------------
@@ -700,11 +700,11 @@ Form Control CSS
 }
 
 .form-control {
-  padding: .75rem .75rem;
+  padding: .75rem .75rem !important;
 }
 
 .form-select {
-  padding: .75rem .75rem;
+  padding: .75rem .75rem !important;
 }
 
 .form-group .input-icon {
@@ -822,7 +822,7 @@ Hero Slider section
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-border {
@@ -1159,7 +1159,7 @@ Login Page CSS
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 30px;
   position: relative;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .company-details::before {
