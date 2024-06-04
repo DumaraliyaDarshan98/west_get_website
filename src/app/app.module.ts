@@ -30,7 +30,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { GeneralComponent } from './components/faq/general/general.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { APIInterceptor } from './core/interceptor/ApiInterceptor';
-import { CommonModule } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -75,6 +75,7 @@ import { ToastrModule } from 'ngx-toastr';
     }),
   ],
   providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
     {
       provide: HTTP_INTERCEPTORS,
       useClass:APIInterceptor,
